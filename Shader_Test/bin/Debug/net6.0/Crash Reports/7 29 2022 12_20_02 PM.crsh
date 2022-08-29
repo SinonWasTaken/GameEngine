@@ -1,0 +1,2 @@
+Error compiling shader! 0(16) : error C0000: syntax error, unexpected '}', expecting ',' or ';' at token "}"
+ ShaderType: FragmentShaderArb 9

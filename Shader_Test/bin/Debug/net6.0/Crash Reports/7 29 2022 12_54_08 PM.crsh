@@ -1,0 +1,6 @@
+Error compiling shader! 0(24) : error C0000: syntax error, unexpected identifier, expecting '(' at token "i"
+0(24) : error C1503: undefined variable "i"
+0(24) : error C1503: undefined variable "i"
+0(24) : error C1503: undefined variable "i"
+0(24) : error C1503: undefined variable "i"
+ ShaderType: FragmentShaderArb 9

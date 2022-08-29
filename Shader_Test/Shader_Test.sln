@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shader_Test", "Shader_Test.csproj", "{8A4E8369-721B-4AA4-83EA-2867DCDC91AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nekinu", "..\Nekinu\Nekinu.csproj", "{7DAE29D3-5C94-468B-A0D1-3CEB90069FB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A4E8369-721B-4AA4-83EA-2867DCDC91AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4E8369-721B-4AA4-83EA-2867DCDC91AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4E8369-721B-4AA4-83EA-2867DCDC91AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4E8369-721B-4AA4-83EA-2867DCDC91AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAE29D3-5C94-468B-A0D1-3CEB90069FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAE29D3-5C94-468B-A0D1-3CEB90069FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAE29D3-5C94-468B-A0D1-3CEB90069FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAE29D3-5C94-468B-A0D1-3CEB90069FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

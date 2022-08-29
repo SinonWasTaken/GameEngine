@@ -1,0 +1,17 @@
+Error compiling shader! 0(18) : error C1503: undefined variable "MAGIC"
+ ShaderType: FragmentShaderArb 9#include Fresnel.txt
+#include GradientNoise.txt
+#version 400
+
+in vec3 toCameraVector;
+in vec3 toNormal;
+
+out vec4 out_color;
+
+START
+void main()
+{
+    float factor = fresnelFactor(toCameraVector, toNormal, 0.5);
+    out_color = gradientNoise(vec2(1), 1);
+}
+END

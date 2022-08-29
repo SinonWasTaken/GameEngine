@@ -1,0 +1,2 @@
+Error compiling shader! 0(22) : error C7011: implicit cast from "float" to "vec4"
+ ShaderType: FragmentShaderArb 9

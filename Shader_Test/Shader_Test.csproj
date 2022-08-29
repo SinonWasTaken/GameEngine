@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Nekinu\Nekinu.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Test_Fragment.txt" />
+      <EmbeddedResource Include="Resources\Test_Vertex.txt" />
+      <EmbeddedResource Include="Resources\water_plane.obj" />
+      <None Remove="Resources\Fresnel.txt" />
+    </ItemGroup>
+
+</Project>

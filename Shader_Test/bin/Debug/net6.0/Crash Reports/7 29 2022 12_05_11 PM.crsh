@@ -1,0 +1,2 @@
+Error compiling shader! 0(18) : error C1503: undefined variable "MAGIC"
+ ShaderType: FragmentShaderArb 9

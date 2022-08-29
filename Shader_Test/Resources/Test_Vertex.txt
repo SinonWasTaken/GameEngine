@@ -1,0 +1,32 @@
+﻿#version 400
+
+in vec3 position;
+in vec2 texture;
+in vec3 normal;
+
+uniform mat4 projection;
+uniform mat4 view;
+uniform mat4 transform;
+
+uniform vec3 cameraPosition;
+
+uniform vec4 plane;
+
+out vec3 outPosition;
+out vec3 toCameraVector;
+out vec2 outTexture;
+out vec3 toNormal;
+
+void main()
+{
+    vec4 worldPos = vec4(position.xyz, 1.0) * transform;
+
+    gl_ClipDistance[0] = dot(vec4(position.xyz, 1.0) * transform, plane);
+    
+    gl_Position = worldPos * view * projection;
+    
+    outPosition = position;
+    outTexture = texture;
+    toCameraVector = cameraPosition - worldPos.xyz;
+    toNormal = normalize(normal);
+}

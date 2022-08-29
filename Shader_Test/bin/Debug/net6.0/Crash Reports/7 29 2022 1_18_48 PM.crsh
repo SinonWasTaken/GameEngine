@@ -1,0 +1,6 @@
+Error compiling shader! 0(23) : error C1021: operands to "%" must be integral
+0(23) : error C1021: operands to "%" must be integral
+0(23) : error C1021: operands to "%" must be integral
+0(23) : error C7506: OpenGL does not define the global function frac
+0(23) : error C7506: OpenGL does not define the global function frac
+ ShaderType: FragmentShaderArb 9

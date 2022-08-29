@@ -1,0 +1,2 @@
+Error compiling shader! (0) : error C0000: syntax error, unexpected $end, expecting ',' or ';' at token "<EOF>"
+ ShaderType: FragmentShaderArb 9

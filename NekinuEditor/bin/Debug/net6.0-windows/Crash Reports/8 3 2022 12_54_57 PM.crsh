@@ -1,0 +1,4 @@
+Error rendering! :System.NullReferenceException: Object reference not set to an instance of an object.
+   at NekinuSoft.Mesh.Bind() in C:\Users\Seth\Desktop\Nekinu\Nekinu\Scripts\BackgroundScripts\Mesh\Mesh.cs:line 35
+   at StandardRenderer.Render(Camera camera) in C:\Users\Seth\Desktop\Nekinu\Nekinu\Scripts\BackgroundScripts\Renderers\StandardRenderer.cs:line 23
+   at NekinuSoft.MasterRenderer.Render() in C:\Users\Seth\Desktop\Nekinu\Nekinu\Scripts\BackgroundScripts\Renderers\MasterRenderer.cs:line 40

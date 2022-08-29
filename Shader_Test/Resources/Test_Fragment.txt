@@ -1,0 +1,21 @@
+﻿#include Fresnel.txt
+#include UnityGradient.txt
+#version 400
+
+in vec3 outPosition;
+in vec3 toCameraVector;
+in vec2 outTexture;
+in vec3 toNormal;
+
+out vec4 out_color;
+
+START
+void main()
+{
+    vec2 st = gl_FragCoord.xy/vec2(1,1);
+    
+    float grad = Unity_GradientNoise_float(outTexture, 5);
+    
+    out_color = vec4(vec3(grad), 1);
+}
+END
