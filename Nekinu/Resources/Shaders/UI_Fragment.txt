@@ -1,0 +1,15 @@
+﻿#version 400
+
+in vec2 pass_texture;
+
+out vec4 out_color;
+
+uniform sampler2D uiTexture;
+uniform vec4 image_color;
+
+void main()
+{
+    vec4 color = texture(uiTexture, pass_texture); 
+   
+    out_color = image_color * color;
+}

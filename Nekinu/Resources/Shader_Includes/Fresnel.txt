@@ -1,0 +1,2 @@
+﻿float fresnelFactor(vec3 cameraWorldPosition, vec3 objectNormal, float fresnelPower);
+float fresnelFactor(vec3 cameraWorldPosition, vec3 objectNormal, float fresnelPower) { vec3 eye = normalize(cameraWorldPosition); float fresnel = dot(eye, objectNormal); fresnel = pow(fresnel, fresnelPower); return fresnel; }

@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Exe</OutputType>
+        <LangVersion>10</LangVersion>
+        <TargetFrameworks>net6.0;net6.0-windows</TargetFrameworks>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="OpenTK" Version="4.6.7" />
+      <PackageReference Include="System.Drawing.Common" Version="7.0.0-preview.1.22076.8" />
+      <PackageReference Include="System.Resources.Extensions" Version="7.0.0-preview.1.22076.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Shaders\VertexT.txt" />
+      <None Remove="Resources\Test.txt" />
+      <None Remove="Resources\Shaders\Vertex.txt" />
+      <EmbeddedResource Include="Resources\Shaders\FragmentT.txt" />
+      <EmbeddedResource Include="Resources\Shaders\Vertex.txt" />
+      <None Remove="Resources\Shaders\Fragment.txt" />
+      <EmbeddedResource Include="Resources\Shaders\Fragment.txt" />
+      <None Remove="Resources\Models\Block.obj" />
+      <None Remove="Resources\blocks\Block_01.dat" />
+      <None Remove="Resources\blocks\Block_02.dat" />
+      <None Remove="Resources\Chunk_Data\Chunk_Data01.dat" />
+      <None Remove="Resources\Models\UI\Image.obj" />
+      <EmbeddedResource Include="Resources\Models\UI\Image.obj" />
+      <None Remove="Resources\Shaders\UI_Vertex.txt" />
+      <EmbeddedResource Include="Resources\Shaders\UI_Vertex.txt" />
+      <None Remove="Resources\Shaders\UI_Fragment.txt" />
+      <EmbeddedResource Include="Resources\Shaders\UI_Fragment.txt" />
+      <None Remove="Resources\Textures\Sand.png" />
+      <EmbeddedResource Include="Resources\Sounds\pacman dies.wav" />
+      <EmbeddedResource Include="Resources\Textures\Sand.png" />
+      <None Remove="Resources\Textures\Towa.jpg" />
+      <EmbeddedResource Include="Resources\Textures\Towa.jpg" />
+      <None Remove="Resources\Models\Particle.obj" />
+      <EmbeddedResource Include="Resources\Models\Particle.obj" />
+      <None Remove="Resources\Shaders\Particle_Fragment.txt" />
+      <EmbeddedResource Include="Resources\Shaders\Particle_Fragment.txt" />
+      <None Remove="Resources\Shaders\Particle_Vertex.txt" />
+      <EmbeddedResource Include="Resources\Shaders\Particle_Vertex.txt" />
+      <None Remove="Resources\Image\OpeningScreen.png" />
+      <EmbeddedResource Include="Resources\Image\OpeningScreen.png" />
+      <None Remove="Resources\Shader_Includes\Fresnel.txt" />
+      <EmbeddedResource Include="Resources\Shader_Includes\Fresnel.txt" />
+      <None Remove="Resources\Shader_Includes\GradientNoise.txt" />
+      <None Remove="Resources\Shader_Includes\Saturate.txt" />
+      <EmbeddedResource Include="Resources\Shader_Includes\Saturate.txt" />
+      <None Remove="Resources\Shader_Includes\Noise.txt" />
+      <EmbeddedResource Include="Resources\Shader_Includes\Noise.txt" />
+      <None Remove="Resources\Shader_Includes\UnityGradient.txt" />
+      <EmbeddedResource Include="Resources\Shader_Includes\UnityGradient.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Resources\Fragment.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Resources\Vertex.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

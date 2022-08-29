@@ -1,0 +1,33 @@
+#version 400
+
+in vec3 position;
+in vec2 texture;
+in vec3 normal;
+in vec3 tangent;
+
+out vec3 pass_position;
+out vec2 pass_texture;
+out vec3 pass_normals;
+out vec3 pass_Tangent;
+
+uniform mat4 projection_matrix;
+uniform mat4 transformation_matrix;
+uniform mat4 view_matrix;
+
+void main(void)
+{
+    vec4 world = vec4(position, 1.0) * transformation_matrix;
+    
+    mat4 model_view = transformation_matrix * view_matrix; 
+
+	mat4 transform = transformation_matrix * view_matrix * projection_matrix;
+
+    vec3 surface = model_view * vec4(normal.xyz, 0.0).xyz;
+
+    pass_position = position;
+    pass_texture = texture;
+    pass_normals = normalize(normal);
+    pass_Tangent = tangent;
+
+	gl_Position = vec4(position, 1.0) * transform;
+}

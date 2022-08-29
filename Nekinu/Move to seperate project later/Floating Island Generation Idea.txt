@@ -1,0 +1,11 @@
+﻿    https://www.reddit.com/r/gamedev/comments/1g4eae/need_help_generating_an_island_using_perlin_noise/
+    
+    https://i.imgur.com/AqeqadV.jpg
+    
+    https://imgur.com/a/eIhzq#0
+    
+    https://i.imgur.com/k8782g5.jpg
+    
+    https://gamedev.stackexchange.com/questions/21297/how-can-i-generate-floating-land-masses-for-a-minecraft-like-engine
+    
+    Images and references to look back on

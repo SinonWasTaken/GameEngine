@@ -1,0 +1,23 @@
+#version 400
+
+in vec3 position;
+in vec2 texture;
+in vec3 normal;
+
+out vec3 pass_position;
+out vec3 pass_normals;
+
+uniform mat4 projection_matrix;
+uniform mat4 transformation_matrix;
+uniform mat4 view_matrix;
+
+void main(void)
+{
+	mat4 transform = transformation_matrix * view_matrix * projection_matrix;
+
+    pass_position = position;
+
+    pass_normals = normalize(normal);
+
+	gl_Position = vec4(position, 1.0) * transform;
+}

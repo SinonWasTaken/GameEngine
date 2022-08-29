@@ -1,0 +1,16 @@
+﻿There is only support for one light in the scene, change that. If i forget how to, watch thinmatrix https://www.youtube.com/watch?v=95WAAYsOifQ&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=25
+
+Add support for skyboxes https://www.youtube.com/watch?v=_Ix5oN8eC1E&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=27
+Add support for particles https://www.youtube.com/watch?v=6PkjU9LaDTQ&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=36 | https://www.youtube.com/watch?v=POEzdiqEESo&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=36
+Add support for shadows https://www.youtube.com/watch?v=o6zDfDkOFIc&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=39
+Add font support https://www.youtube.com/watch?v=mnIQEQoHHCU&list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&index=33
+
+-- Water Shader --
+    https://www.youtube.com/watch?v=21UsMuFTN0k&list=PLRIWtICgwaX23jiqVByUs0bqhnalNTNZh&index=2
+
+Begin work on the ContentPanel
+    ContentPanel can only see the Assets folder, and the folders inside it. No other directory will be seen
+    Create a Folder Image, a Script Image and render an Image to a ImGui Button
+    
+Error in the TreeNodeComponent class.
+    The field for strings is broken and crashes the game

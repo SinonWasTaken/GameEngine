@@ -1,0 +1,33 @@
+#version 400
+
+in vec3 pass_position;
+in vec2 pass_texture;
+in vec3 pass_normals;
+in vec3 pass_Tangent;
+
+uniform vec3 light_position;
+uniform vec4 light_color;
+
+uniform vec3 light_attenuation;
+
+out vec4 out_color;
+
+void main(void)
+{
+    //normal map stuff 
+    //vec4 normal_map = 2.0 * texture(normalmap, pass_texture) - 1.0;
+
+    vec3 light = normalize(light_position);
+
+    vec3 to_Light = light - pass_position;
+    
+    float distance = length(to_Light);
+    
+    float atten = 1.0 / (light_attenuation.x + (light_attenuation.y * distance) + (light_attenuation.z * (distance * distance)));
+
+    vec3 attenuation = atten * light_color.xyz * max(dot(pass_normals, light), 0);
+
+	out_color = vec4(0,0.5f,0,1.0) + vec4(attenuation.xyz, 1.0);
+	
+	//out_color = vec4(pass_Tangent);
+}

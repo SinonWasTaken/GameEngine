@@ -1,0 +1,3 @@
+C:\Users\Seth\Desktop\Nekinu\Single\Nekinu.pdb
+C:\Users\Seth\Desktop\Nekinu\Single\glfw3.dll
+C:\Users\Seth\Desktop\Nekinu\Single\Nekinu.exe
