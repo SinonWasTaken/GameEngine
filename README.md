@@ -1,2 +1,2 @@
-# Mascho_Seth_NekinuGameEngine
+# Mascho_Seth_GameEngine
  A game engine made in C#. Very rough around the edges
