@@ -7,16 +7,19 @@ using Vector4 = NekinuSoft.Vector4;
 
 public static class Screen
 {
+    //Converts the point on the screen into world position
     public static Vector3 ScreenToWorld(Camera camera)
     {
         return calculate_ray(camera);
     }
 
+    //Draws a ray from the mouse position to the world
     private static Vector3 calculate_ray(Camera camera)
     {
         float mouse_X = Input.Get_Mouse_X;
         float mouse_Y = Input.Get_Mouse_Y;
 
+        //Not sure how this works
         Vector2 normalized_position = normalize_screen_position(mouse_X, mouse_Y);
         Vector4 clip = new Vector4(normalized_position.x, normalized_position.y, -1, 1);
         Vector4 eyes = to_eye_space(clip, camera);

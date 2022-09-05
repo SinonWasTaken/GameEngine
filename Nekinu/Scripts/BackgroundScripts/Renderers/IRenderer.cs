@@ -2,6 +2,7 @@
 
 namespace NekinuSoft.Renderer
 {
+    //Base class for any render class
     public class IRenderer
     {
         public virtual void Render(Camera camera) { }

@@ -20,6 +20,8 @@ public class ShadowMapRenderer : IRenderer
         buffer = new ShadowFrameBuffer(Shadow_Map_Size, Shadow_Map_Size);
     }
 
+    //Used to render shadows. Clearly doesnt work
+    
     /*public override void Render(Camera camera)
     {
         base.Render(camera);

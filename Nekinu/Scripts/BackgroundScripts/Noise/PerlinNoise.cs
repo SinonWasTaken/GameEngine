@@ -2,6 +2,7 @@
 
 namespace NekinuSoft
 {
+	//A class I found on youtube. Not sure how it works, but it allows a user to generate random numbers based on a seed
 	public class PerlinNoise
 	{
 		private long seed;

@@ -13,10 +13,10 @@
 
         public async Task run()
         {
-            //While the predicate has not been completed
+            //Prevents the code from executing until a condition is met. I.E (5+i == 10). i is 4, the result is 9, meaning the code doesnt execute
             while (!predicate())
             {
-                //Wait a 10th of a second
+                //Wait a tenth of a second
                 await Task.Delay(100);
             }
         }

@@ -14,7 +14,7 @@
         //Delays the program
         public async Task run()
         {
-            //Waits for seconds * 1000 miliseconds = 1 second
+            //delays the code execution by waitSeconds. 1000 miliseconds = 1 second, waitSeconds = 5.5f then this would be waiting 5500 miliseconds
             await Task.Delay((int)(waitSeconds * 1000));
         }
     }

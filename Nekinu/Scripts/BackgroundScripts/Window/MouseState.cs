@@ -1,5 +1,6 @@
 ﻿namespace NekinuSoft
 {
+    //Doesn't work properly. Need to fix
     public static class MouseState
     {
         private static bool is_visible = false;
