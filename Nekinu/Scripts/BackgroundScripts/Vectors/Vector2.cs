@@ -2,6 +2,7 @@
 
 namespace NekinuSoft
 {
+    //A class that contains 2 float
     public class Vector2
     {
         public float x { get; set; }
@@ -25,15 +26,19 @@ namespace NekinuSoft
             this.y = y;
         }
 
+        //Default property that produces new Vector2(0, 0)
         [JsonIgnore] public static Vector2 zero => new Vector2();
 
+        //Default property that produces new Vector2(1, 1)
         [JsonIgnore] public static Vector2 one => new Vector2(1);
 
+        //The length of the vector
         public float Length()
         {
             return (float) System.Math.Sqrt(x * x + y * y);
         }
 
+        //Makes the values of the vector less than 1
         public Vector2 Normalize()
         {
             Vector2 thisVector = this;
@@ -51,6 +56,7 @@ namespace NekinuSoft
             return thisVector;
         }
 
+        //The distance between 2 vectors
         public static float Distance(Vector2 a, Vector2 b)
         {
             float distance = 0;
@@ -72,11 +78,13 @@ namespace NekinuSoft
             return x * x + y * y;
         }
 
+        //Makes the vector negative
         public Vector2 Negative()
         {
             return new Vector2(-x, -y);
         }
 
+        //converts a system.vector2 to this vector2
         public void ConvertSystemVector(System.Numerics.Vector2 v)
         {
             x = v.X;

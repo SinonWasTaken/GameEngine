@@ -1,5 +1,6 @@
 ﻿namespace NekinuSoft
 {
+    //Not my class. Not entirely sure what it does. It contains information for each vertex, i think
     internal class Vertex
     {
         private static int NO_INDEX = -1;

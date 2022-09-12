@@ -5,12 +5,17 @@ namespace NekinuSoft.Editor;
 
 public class PropertiesPanel : IEditorPanel
 {
+    //The id of selected component
     private int componentSelection;
+    //the names of all components
     private List<string> string_comp;
+    //Gets the type of all components
     private List<Type> comp;
+    //a list of all components
     private List<TreeNodeComponent> components;
     private bool addingComponent = false;
 
+    //The selected entity
     private Entity selectedEntity;
     
     public override void Init()

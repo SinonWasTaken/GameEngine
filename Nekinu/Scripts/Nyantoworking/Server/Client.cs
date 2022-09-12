@@ -3,6 +3,7 @@ using System.Net.Sockets;
 
 namespace NekinuSoft.NyanToWorking.ServerSide
 {
+    //The client that exists only on the server
     public class Client
     {
         public const int dataBufferSize = 4096;

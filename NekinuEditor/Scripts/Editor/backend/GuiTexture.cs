@@ -4,6 +4,7 @@ using System.Drawing.Imaging;
 
 namespace NekinuSoft.Editor
 {
+    //Not my class
     internal enum TextureCoordinate
     {
         S = TextureParameterName.TextureWrapS,

@@ -7,6 +7,8 @@ using System.Runtime.CompilerServices;
 
 namespace NekinuSoft.Editor
 {
+    //Not my class
+    
     /// <summary>
     /// A modified version of Veldrid.ImGui's ImGuiRenderer.
     /// Manages input for ImGui and handles rendering ImGui's DrawLists with Veldrid.

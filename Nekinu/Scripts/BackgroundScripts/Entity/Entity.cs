@@ -178,13 +178,8 @@ namespace NekinuSoft
         public List<Component> Components => _components;
         public List<Entity> Children => children;
         
+        //Gets the transformation matrix of the entity
         public Matrix4 TransformationMatrix => Matrix4x4.entityTransformationMatrix(parent, transform);
-        
-        public string Tag
-        {
-            get => entity_tag;
-            set => entity_tag = value;
-        }
 
         public Transform Transform
         {

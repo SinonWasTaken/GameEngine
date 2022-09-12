@@ -2,19 +2,25 @@
 
 namespace NekinuSoft
 {
+    //A class that create a 4x4 matrix
     public class Matrix4x4
     {
+        //Creates a transformation matrix for normal entities
         public static Matrix4 entityTransformationMatrix(Entity Parent, Transform transform)
         {
             Matrix4 result;
 
+            //Creates a matrix for the position
             Matrix4 transformMatrix =
                 Matrix4.CreateTranslation(transform.position.x, transform.position.y, transform.position.z);
 
+            //Creates a matrix for the rotation
             Matrix4 rot = CreateRotationMatrixEuler(transform.rotation);
 
+            //Creates a matrix for the scale
             Matrix4 scale = Matrix4.CreateScale(transform.scale.x, transform.scale.y, transform.scale.z);
 
+            //combines all 3 matrices
             result = Matrix4.Mult(scale, rot);
             result = Matrix4.Mult(result, transformMatrix);
 
@@ -26,6 +32,7 @@ namespace NekinuSoft
             return result;
         }
 
+        //Creates a transformation matrix for ui entities
         public static Matrix4 Create_UI_Matrix(Entity entity)
         {
             Vector3 new_position = new Vector3(entity.Transform.position.x / (WindowSize.Width / 2f),
@@ -45,22 +52,7 @@ namespace NekinuSoft
             return Matrix4.Mult(result, transformMatrix);
         }
 
-        public static Matrix4 Create_Default_Matrix(Vector3 position)
-        {
-            Matrix4 result; 
-            Matrix4 transformMatrix =
-                Matrix4.CreateTranslation(position.x, position.y, position.z);
-
-            Matrix4 rot = CreateRotationMatrixEuler(Vector3.zero);
-
-            Matrix4 scale = Matrix4.CreateScale(1, 1, 1);
-
-            result = Matrix4.Mult(scale, rot);
-            result = Matrix4.Mult(result, transformMatrix);
-
-            return result;
-        }
-        
+        //Creates a rotation matrix for normal entities
         public static Matrix4 CreateRotationMatrixEuler(Vector3 rotation)
         {
             Matrix4 x = Matrix4.CreateRotationX(rotation.x * Math.Math.ToRadians);
@@ -70,6 +62,7 @@ namespace NekinuSoft
             return z * y * x;
         }
 
+        //Creates a transformation matrix for camera entities
         public static Matrix4 CreateCameraRotationMatrixEuler(Vector3 rotation)
         {
             Matrix4 x = Matrix4.CreateRotationX(rotation.x * Math.Math.ToRadians);
@@ -89,6 +82,7 @@ namespace NekinuSoft
             return cameraTransformationMatrix(null, transform);
         }
 
+        //Creates a transformation matrix for camera entities
         public static Matrix4 cameraTransformationMatrix(Entity Parent, Transform transform)
         {
             Matrix4 transformMatrix =

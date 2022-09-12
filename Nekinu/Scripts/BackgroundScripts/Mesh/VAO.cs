@@ -4,8 +4,10 @@ namespace NekinuSoft
 {
     public class VAO
     {
+        //The object that contains mesh information
         public int vao { get; private set; }
 
+        //Contains information on buffer objects, such as textures, normals etc..
         private List<int> vbos;
 
         public int VAOID => vao;
@@ -16,17 +18,20 @@ namespace NekinuSoft
         {
         }
 
+        //Initializes the vao data
         public void createVAO()
         {
             vbos = new List<int>();
             vao = GL.GenVertexArray();
         }
 
+        //Binds the vao for use
         public void Bind()
         {
             GL.BindVertexArray(vao);
         }
 
+        //Binds the attributes of the mesh. textures, normals etc...
         public void BindVertexAttribute()
         {
             for (int i = 0; i < vbos.Count; i++)
@@ -35,6 +40,7 @@ namespace NekinuSoft
             }
         }
 
+        //Unbinds the attributes
         public void UnbindVertexAttribute()
         {
             for (int i = 0; i < vbos.Count; i++)
@@ -43,12 +49,14 @@ namespace NekinuSoft
             }
         }
 
+        //Unbinds the vao
         public void Unbind()
         {
             GL.BindVertexArray(0);
         }
 
-        public void bindIndiciesBuffer(int[] indicies)
+        //Binds the indices and adds them to the vbo buffer
+        public void bindIndicesBuffer(int[] indicies)
         {
             int vbo = GL.GenBuffer();
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, vbo);
@@ -57,6 +65,7 @@ namespace NekinuSoft
             vbos.Add(vbo);
         }
 
+        //Stores float (points, coordinates) information in the vao
         public void storeData(int number, int size, float[] data)
         {
             int vbo = GL.GenBuffer();
@@ -67,6 +76,7 @@ namespace NekinuSoft
             vbos.Add(vbo);
         }
 
+        //Stores int (locations in memory) information in the vao
         public void storeIntData(int number, int size, int[] data)
         {
             int vbo = GL.GenBuffer();
@@ -77,6 +87,7 @@ namespace NekinuSoft
             vbos.Add(vbo);
         }
 
+        //Removes all vao data from memory
         public void CleanUp()
         {
             GL.DeleteVertexArray(vao);

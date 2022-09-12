@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace NekinuSoft.Editor
 {
+    //Not my class
     internal static class Util
     {
         [Pure]

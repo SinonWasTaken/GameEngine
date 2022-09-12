@@ -4,6 +4,7 @@ using Vector3 = NekinuSoft.Vector3;
 using Vector4 = NekinuSoft.Vector4;
 using Matrix4x4 = System.Numerics.Matrix4x4;
 
+//Not used
 public class ShadowBox
 {
     private const float OFFSET = 10;

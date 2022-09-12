@@ -1,5 +1,6 @@
 ﻿using System.Text;
 
+//Not my class. Sends data over the internet
 namespace NekinuSoft.NyanToWorking
 {
         /// <summary>Sent from server to client.</summary>

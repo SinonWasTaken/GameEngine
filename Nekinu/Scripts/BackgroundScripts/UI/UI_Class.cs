@@ -2,13 +2,17 @@
 
 namespace NekinuSoft.UI
 {
+    //The base ui class
     public class UI_Class : Component
     {
+        //The mesh of the ui
         private Mesh ui_mesh;
+        //The texture of the ui
         private Texture ui_texture;
         
         [SerializedProperty] private Vector4 color;
 
+        //Constructor
         public UI_Class(Vector4 color)
         {
             ui_mesh = MeshLoader.MeshLoader.loadOBJ(ResourceGetter.Get_Resource_File_Of_Type_String("Image", ".obj"));

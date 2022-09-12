@@ -17,6 +17,7 @@ namespace FileBrowser
             this.Hide();
         }
 
+        //Opens the file browser to get a file
         [STAThread]
         public static Dictionary<Stream, string> getFile(string title, string file_extension, string starting_directory)
         {
@@ -39,6 +40,7 @@ namespace FileBrowser
             }
         }
 
+        //Opens the file browser to save a file
         [STAThread]
         public static string saveFile(string title, string save_extension, string default_directory)
         {

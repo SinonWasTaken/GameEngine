@@ -1,5 +1,6 @@
 ﻿using OpenTK.Graphics.OpenGL;
 
+//Not used
 namespace NekinuSoft
 {
     public class ShadowFrameBuffer

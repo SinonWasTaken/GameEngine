@@ -4,10 +4,13 @@ using Nekinu;
 
 namespace NekinuSoft.Editor;
 
+//A class that renders a component on the selected entity
 public class TreeNodeComponent
 {
+    //The component
     private Component component;
 
+    //only renders the information if this is true
     private bool isOpen;
     
     public TreeNodeComponent(Component component)
@@ -16,30 +19,39 @@ public class TreeNodeComponent
         isOpen = false;
     }
 
+    //Default render method
     public void Render()
     {
         RenderComponentDetails();
     }
 
+    //Renders the component detail
     private void RenderComponentDetails()
     {
+        //Pushes the id of the component in the entity. If two of the same components exists, both will be rendered separately
         ImGui.PushID(findComponentIndex());
         
+        //Enables or disables a component
         if (ImGui.Button(component.IsActive ? "X" : " "))
         {
             component.IsActive = !component.IsActive;
         }
         
+        //Removes the id from the stack
         ImGui.PopID();
         
+        //Makes the following code render on the same line as the previous
         ImGui.SameLine();
         
+        //Gets the name of the component
         string[] lines = component.GetType().ToString().Split(".");
+        //Renders a button with the name of the component
         if (ImGui.Button($"{lines[lines.Length - 1]}"))
         {
             isOpen = !isOpen;
         }
             
+        //Render the information if the fold is open 
         if (isOpen)
         {
             Type type = component.GetType();
@@ -48,6 +60,7 @@ public class TreeNodeComponent
         }
     }
 
+    //Gets the index of a component
     private int findComponentIndex()
     {
         for (int i = 0; i < HierarchyPanel.selectedEntity.Components.Count; i++)
@@ -61,6 +74,7 @@ public class TreeNodeComponent
         return -1;
     }
 
+    //Draws all fields in a class that meet a certain requirement
     private void drawFields(Component component, Type type)
     {
         FieldInfo[] fields = type.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
@@ -96,6 +110,7 @@ public class TreeNodeComponent
         }
     }
 
+    //Checks every field in a class, and determine if it can be show in the editor
     private void checkFieldType(Component c, FieldInfo info, FieldInfo[] infos)
     {
         try
@@ -165,6 +180,7 @@ public class TreeNodeComponent
         }
     }
 
+    //Same as the method above, but only for properties in a class. Not being used
     private void drawProperties(Component c, Type t)
     {
         for (int prop = 0; prop < t.GetProperties().Length; prop++)

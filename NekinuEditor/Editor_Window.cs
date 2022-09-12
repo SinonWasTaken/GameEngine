@@ -7,6 +7,7 @@ using OpenTK.Windowing.Desktop;
 
 namespace NekinuSoft
 {
+    //Same as the default window class, but it also rendered the editor 
     public class Editor_Window : GameWindow
     {
         private Time time;

@@ -1,5 +1,6 @@
 ﻿namespace NekinuSoft;
 
+//Contains the width, height and the aspect ratio of the window
 public static class WindowSize
 {
     private static int height;

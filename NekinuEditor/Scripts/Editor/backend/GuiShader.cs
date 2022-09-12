@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace NekinuSoft.Editor
 {
+    //Not my class
     internal struct UniformFieldInfo
     {
         public int Location;

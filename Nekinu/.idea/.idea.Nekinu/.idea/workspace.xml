@@ -11,8 +11,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62e0a418-e273-42e9-b70e-26755a70f1db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net5.0-windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net5.0-windows/App.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net5.0-windows/FileBrowser.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/obj/Debug/net5.0-windows/FileBrowser.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileBrowser/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FileBrowser/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nekinu.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nekinu.dir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nekinu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Cache/Cache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Cache/Cache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Entity/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Entity/Entity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/FrameBuffer/FrameBuffer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/FrameBuffer/FrameBuffer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Loaders/MeshLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Loaders/MeshLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Loaders/TextureLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Loaders/TextureLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/Mesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/Mesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/VAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/VAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/Vertex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Mesh/Vertex.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Particle/Particle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Particle/Particle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Particle/Particle_System.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Particle/Particle_System.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/ResourceGetter/ResourceGetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/ResourceGetter/ResourceGetter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/Scene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/Scene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/SceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/SceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/Scene_List.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Scene/Scene_List.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/LitShader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/Particle_Shader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/Particle_Shader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/Shader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/Shader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/ShaderProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shader/ShaderProgram.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shadows/ShadowBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shadows/ShadowBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shadows/ShadowFrameBuffer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Shadows/ShadowFrameBuffer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Texture/Texture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Texture/Texture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Time/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Time/Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/UI_Class.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/UI/UI_Class.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Vectors/Matrix4x4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Vectors/Matrix4x4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Vectors/Vector2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Vectors/Vector2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Window/MouseState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Window/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Window/Window.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/BackgroundScripts/Window/WindowSize.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/BackgroundScripts/Window/WindowSize.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/ClientHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/ClientHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/ClientSend.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Client/ClientSend.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Packet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Packet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/Server.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/ServerHandle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/ServerHandle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/ServerSend.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/Server/ServerSend.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Nyantoworking/ThreadManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Nyantoworking/ThreadManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0-windows/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0-windows/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0-windows/Nekinu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0-windows/Nekinu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Nekinu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Nekinu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows/Nekinu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows/ref/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows/ref/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0-windows/refint/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0-windows/refint/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Nekinu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Editor_StartUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Editor_StartUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Editor_Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Editor_Window.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/EditorRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/EditorRenderer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/ContentBrowser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/ContentBrowser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/DebugPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/DebugPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/DockPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/DockPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/IEditorPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/IEditorPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/PropertiesPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/PropertiesPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/ScenePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/ScenePanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/TreeNodes/TreeNodeComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/TreeNodes/TreeNodeComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/TreeNodes/TreeNodeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/TreeNodes/TreeNodeEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/GuiShader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/GuiShader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/GuiTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/GuiTexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/ImGuiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/ImGuiController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/Util.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/backend/Util.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu_Tile_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu_Tile_Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu_Tile_Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/bin/Debug/net6.0-windows/Nekinu_Tile_Editor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../NekinuEditor/obj/Debug/net6.0-windows/Nekinu_Tile_Editor.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +121,7 @@
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -126,6 +204,9 @@
       <workItem from="1659550753691" duration="6115000" />
       <workItem from="1659734917730" duration="595000" />
       <workItem from="1662355592030" duration="1130000" />
+      <workItem from="1662758875402" duration="5562000" />
+      <workItem from="1662858109150" duration="5376000" />
+      <workItem from="1662950512402" duration="2484000" />
     </task>
     <servers />
   </component>
@@ -148,25 +229,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/../NekinuEditor/Scripts/Editor/Panels/PropertiesPanel.cs</url>
-          <line>93</line>
-          <properties documentPath="C:\Users\Seth\Desktop\Nekinu\NekinuEditor\Scripts\Editor\Panels\PropertiesPanel.cs" initialLine="93" containingFunctionPresentation="method 'Render'">
-            <startOffsets>
-              <option value="3065" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3157" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

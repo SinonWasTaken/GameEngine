@@ -1,7 +1,9 @@
 ﻿namespace NekinuSoft.NyanToWorking;
 
+//Updates the server or client thread
 public class ThreadManager : Component
 {
+    //Code that is executed in the main thread
     private static readonly List<Action> executeOnMainThread = new List<Action>();
     private static readonly List<Action> executeCopiedOnMainThread = new List<Action>();
     private static bool actionToExecuteOnMainThread = false;

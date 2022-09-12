@@ -150,21 +150,25 @@ namespace NekinuSoft
         //Removes all loaded data from memory
         public static void FlushCache()
         {
+            //Deletes meshes from the cache
             foreach (Mesh mesh in mesh_vaos)
             {
-                GL.DeleteVertexArray(mesh.vao.vao);
+                mesh.CleanUp();
             }
 
+            //deletes textures from memory
             foreach (Texture texture in texture_vbos)
             {
                 GL.DeleteTexture(texture.id);
             }
 
+            //Deletes shaders from memory
             foreach (ShaderProgram program in shaders)
             {
                 program.CleanUp();
             }
 
+            //Deletes audio clips from memory
             foreach (AudioClip clip in audio_ids)
             {
                 GL.DeleteBuffer(clip.id);

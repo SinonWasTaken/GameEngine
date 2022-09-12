@@ -2,6 +2,7 @@
 using System.Net.Sockets;
 using Nekinu;
 
+//Not my class
 namespace NekinuSoft.NyanToWorking.ClientSide
 {
     public class Client : Component

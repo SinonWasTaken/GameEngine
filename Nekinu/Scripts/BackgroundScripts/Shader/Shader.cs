@@ -2,6 +2,7 @@
 
 namespace NekinuSoft
 {
+    //A default shader for objects
     public class Shader : ShaderProgram
     {
         private int location_transformation;
@@ -42,26 +43,25 @@ namespace NekinuSoft
             return lights;
         }
         
+        //Loads the cameras view matrix
         private void LoadCameraViewMatrix(Camera camera)
         {
             UniformMatrix4(location_view, camera.View);
         }
+        //Loads the cameras projection matrix
         private void LoadCameraProjectionMatrix(Camera camera)
         {
             UniformMatrix4(location_projection, camera.Projection);
         }
 
+        //Loads the camera
         public void Load_Camera(Camera camera)
         {
             LoadCameraProjectionMatrix(camera);
             LoadCameraViewMatrix(camera);
         }
 
+        //Loads a light into the shader
         public virtual void LoadLights(Entity render_object) { }
-        
-        public virtual void Load_Entity_Variables(Entity entity)
-        {
-            UniformMatrix4(location_transformation, entity.TransformationMatrix);
-        }
     }
 }
