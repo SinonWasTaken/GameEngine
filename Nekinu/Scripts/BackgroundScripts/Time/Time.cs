@@ -7,6 +7,7 @@ namespace NekinuSoft
         //The time of the program
         private Stopwatch time;
 
+        private float t;
         //last updated deltaTime
         private long last_time;
         //last updated fpsTime
@@ -34,6 +35,7 @@ namespace NekinuSoft
         //Constructor
         public Time()
         {
+            t = 0;
             time = new Stopwatch();
             //Starts the timer
             time.Start();
@@ -61,6 +63,8 @@ namespace NekinuSoft
             //sets the deltaTime
             deltaTime = ((now - last_time) / 1000f);
 
+            Console.WriteLine($"FPS {FPS} Time running {t} Delta time: {deltaTime}");
+            t += 1 * deltaTime;
             last_time = now;
         }
     }

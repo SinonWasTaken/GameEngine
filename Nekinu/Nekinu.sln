@@ -3,11 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nekinu", "Nekinu.csproj", "{25B8DA5C-DC58-49B1-B261-28419085C6DE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileBrowser", "..\FileBrowser\FileBrowser.csproj", "{501CC046-C56D-4476-996A-2D6316FE131D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nekinu_Tile_Editor", "..\NekinuEditor\Nekinu_Tile_Editor.csproj", "{2A953216-B684-4F90-BF02-D4CF4BCE2EE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nekinu", "Nekinu.csproj", "{25B8DA5C-DC58-49B1-B261-28419085C6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +15,6 @@ Global
 		{25B8DA5C-DC58-49B1-B261-28419085C6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B8DA5C-DC58-49B1-B261-28419085C6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B8DA5C-DC58-49B1-B261-28419085C6DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{501CC046-C56D-4476-996A-2D6316FE131D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{501CC046-C56D-4476-996A-2D6316FE131D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{501CC046-C56D-4476-996A-2D6316FE131D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{501CC046-C56D-4476-996A-2D6316FE131D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A953216-B684-4F90-BF02-D4CF4BCE2EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A953216-B684-4F90-BF02-D4CF4BCE2EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A953216-B684-4F90-BF02-D4CF4BCE2EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A953216-B684-4F90-BF02-D4CF4BCE2EE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

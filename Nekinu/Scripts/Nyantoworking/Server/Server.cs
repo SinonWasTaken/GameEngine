@@ -52,8 +52,9 @@ namespace NekinuSoft.NyanToWorking.ServerSide
             Start_Server();
         }
 
-        private void Start_Server()
+        public void Start_Server()
         {
+            Console.WriteLine("Starting");
             //Initializes the packet data and client list
             InitServerData();
             
@@ -64,6 +65,7 @@ namespace NekinuSoft.NyanToWorking.ServerSide
 
             //begins waiting for data from udp
             udp_listener.BeginReceive(UDPCallBack, null);
+            Console.WriteLine("Waiting for players");
         }
 
         private void UDPCallBack(IAsyncResult ar)
@@ -157,7 +159,7 @@ namespace NekinuSoft.NyanToWorking.ServerSide
             //Initializes clients
             for (int i = 1; i <= max_players; i++)
             {
-                clients.Add(i, new Client(i));
+                clients.Add(i, new Client(0));
             }
         }
 
@@ -173,6 +175,21 @@ namespace NekinuSoft.NyanToWorking.ServerSide
                 {
                     clients[i].Disconnect();
                 }
+            }
+        }
+
+        public void End()
+        {
+            for (int i = 1; i <= clients.Count; i++)
+            {
+                //Disconnects the clients
+                if (clients[i].Id != 0)
+                {
+                    clients[i].Disconnect();
+                }
+                
+                Console.WriteLine("Ending server");
+                listener.Stop();
             }
         }
 

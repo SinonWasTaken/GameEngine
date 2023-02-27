@@ -24,7 +24,7 @@ namespace NekinuSoft.NyanToWorking.ClientSide
         public delegate void PacketHandler(Packet packet);
         private Dictionary<int, PacketHandler> packetHandlers;
 
-        public override void Awake()
+        public override void Start()
         {
             if (Instance != null && Instance != this)
             {
@@ -35,6 +35,7 @@ namespace NekinuSoft.NyanToWorking.ClientSide
 
             tcp = new TCP();
             udp = new UDP();
+            ConnectToServer();
         }
 
         public void ConnectToServer()

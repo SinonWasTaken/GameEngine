@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using NekinuSoft;
+using NekinuSoft.NyanToWorking.ServerSide;
 using NekinuSoft.Scene_Manager;
 using OpenTK.Graphics.ES30;
 using OpenTK.Mathematics;
@@ -14,12 +15,19 @@ namespace NekinuSoft
 
         public static Window window;
 
+        private Scene _scene = new Scene("Scene");
+        Server server = new Server(5, 22);
+        
         public Window(string title, int width, int height, bool full_screen = false) : base(GameWindowSettings.Default, NativeWindowSettings.Default)
         {
+            Entity camera = new Entity("Camera");
+            camera.AddComponent<Camera>();
+            
+            _scene.AddEntity(camera);
+            
+            server.Start_Server();
+            Debug.InitDebugLogging();
             Title = title;
-
-            //Sets the window to fullscreen if the user wants it to be
-            WindowState = full_screen ? WindowState.Fullscreen : WindowState.Normal;
 
             //Inits the resource getter class
             ResourceGetter.Init_Assembly();
@@ -29,11 +37,15 @@ namespace NekinuSoft
             //Puts the window to the middle of the screen
             GL.Viewport(0, 0, width, height);
             
+            //Sets the window to fullscreen if the user wants it to be
+            WindowState = full_screen ? WindowState.Fullscreen : WindowState.Normal;
+            
             //Updates the window size class
             WindowSize.UpdateSize(width, height);
 
             //Inits the cache class
             Cache.InitCache();
+            
 
             window = this;
 
@@ -61,6 +73,13 @@ namespace NekinuSoft
             SceneManager.InitSceneManager();
             //Adds a default renderer to the master renderer class
             MasterRenderer.InitMasterRenderer(new StandardRenderer());
+            
+            Entity model = new Entity("Model", new Transform(new Vector3(0,0, 10)));
+            Mesh mesh = MeshLoader.MeshLoader.loadOBJ("world_vending_machine.obj");
+            model.AddComponent(mesh);
+            _scene.AddEntity(model);
+            SceneManager.AddScene(_scene);
+            SceneManager.LoadScene(0);
             
             //Starts the audio class
             AudioSystem.InitAudio();
@@ -140,6 +159,7 @@ namespace NekinuSoft
             MasterRenderer.CloseRenderer();
             //Removes all loaded objects from memory
             Cache.FlushCache();
+            server.End();
         }
     }
 }

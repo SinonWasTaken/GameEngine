@@ -11,12 +11,12 @@ namespace NekinuSoft
 
         private static ParticleRenderer particle_renderer;
         private static UI_Renderer ui_renderer;
-        
+
         public static void InitMasterRenderer(params IRenderer[] render)
         {
             renderers = new List<IRenderer>();
             renderers.AddRange(render);
-
+            
             //Adds the ui renderer and particles renderer last, so they are rendered on top
             ui_renderer = new UI_Renderer();
             particle_renderer = new ParticleRenderer();
